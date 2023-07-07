@@ -12,3 +12,221 @@ body {
   width: 50px;
 }
 
+/*-----------------Para teléfonos móviles--------------*/
+/*Botón de menú*/
+.menu-toggle {
+  display: none;
+}
+
+.hamburger {
+  cursor: pointer;
+  display: block;
+  font-size: 20px;
+  float: right;
+  margin-top: 5px;
+  margin-right: 5px;
+  color: white;
+}
+
+.menu {
+  display: none;
+  list-style: none;
+  padding: 0;
+}
+
+.menu li {
+  padding: 10px;
+}
+
+.menu-toggle:checked ~ .menu {
+  display: block;
+}
+
+.product {
+  clear: both; /*deja el renglon vacio para que no se encime con las imagenes */
+}
+
+.navbar {
+  background-color: gray;
+  padding: 1px;
+  overflow: auto;
+  border: 5px solid rgb(255, 255, 255);
+  max-width: 360px;
+  margin-left: 20px;
+}
+
+/*imagenes y descripción*/
+@media only screen and (max-width: 480px) {
+  body {
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+  }
+
+  .product {
+    margin: 0px auto;
+    max-width: 360px;
+    text-align: center;
+    border: 2px solid black;
+  }
+
+  .product img {
+    width: 800%;
+    max-width: 200px;
+  }
+
+  .product p {
+    margin-top: 10px;
+    font-size: 1em;
+  }
+}
+
+/*-----------Para tabletas-------------*/
+@media only screen and (min-width: 768px) and (max-width: 1024px) {
+  /*------------logo y nombre--------------*/
+  .logo {
+    display: inline-block;
+    margin-right: 10px;
+    vertical-align: middle;
+    margin-right: 150px;
+  }
+
+  h1 {
+    display: inline-block;
+    vertical-align: middle;
+  }
+
+  header {
+    text-align: center;
+  }
+
+  /*-----botón de menú------*/
+  .hamburger {
+    cursor: pointer;
+    display: block;
+    font-size: 20px;
+    float: right;
+    margin-top: 5px;
+    margin-right: 5px;
+    color: white;
+  }
+
+  .navbar {
+    background-color: gray;
+    padding: 1px;
+    overflow: auto;
+    border: 5px solid rgb(255, 255, 255);
+    max-width: 860px;
+  }
+
+  /*-------imagenes y descripciones------*/
+  body {
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+  }
+
+  .product {
+    margin: 0px auto;
+    max-width: 660px;
+    text-align: center;
+  }
+
+  .product img {
+    width: 800%;
+    max-width: 200px;
+  }
+
+  .product p {
+    margin-top: 10px;
+    font-size: 1em;
+    text-align: left;
+  }
+
+  .social {
+    list-style-type: none;
+    padding: 0;
+    text-align: center;
+  }
+
+  .social li {
+    display: inline-block;
+    padding-top: 30px;
+    margin: 0 120px;
+    font-size: 24px;
+  }
+}
+
+/*---------- Estilo para pantallas grandes----------*/
+@media only screen and (min-width: 1025px) {
+  /*------------logo y nombre--------------*/
+  .logo {
+    display: inline-block;
+    margin-right: 10px;
+    vertical-align: middle;
+  }
+
+  h1 {
+    display: inline-block;
+    vertical-align: middle;
+  }
+
+  header {
+    text-align: center;
+  }
+
+  .navbar {
+    width: 100%;
+    background-color: gray;
+    padding: 1px;
+    overflow: auto;
+    border: 5px solid rgb(255, 255, 255);
+    color: white;
+  }
+
+  .menu-toggle {
+    display: none;
+  }
+
+  .menu {
+    display: flex;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    justify-content: flex-end;
+    align-items: center;
+  }
+
+  .menu li {
+    margin-right: 20px;
+    padding: 0;
+  }
+
+  .hamburger {
+    display: none;
+  }
+  .product {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .product-item {
+    flex-basis: 30%;
+    text-align: center;
+    margin: 10px;
+  }
+
+  .product-item img {
+    width: 100%;
+    max-width: 200px;
+    margin-bottom: 10px;
+  }
+
+  .product-item p {
+    font-size: 16px;
+    line-height: 1.5;
+  }
+}
+
